@@ -21,7 +21,7 @@
   navLink.forEach(n => n.addEventListener('click', linkAction));
 
   /*==== Slider ==== */
-  /* const images = document.querySelectorAll(".slider__image img");
+  const images = document.querySelectorAll(".slider__image img");
   const prevButton = document.querySelector(".prev");
   const nextButton = document.querySelector(".next");
   const dots = document.querySelectorAll(".dot");
@@ -52,7 +52,7 @@
     handleNextClick();
     setTimeout(autoSlide, 5000);
   }
-  setTimeout(autoSlide, 5000); */
+  setTimeout(autoSlide, 5000);
   /*==== Scroll Animation ==== */
   const elementsToAnimate = document.querySelectorAll(".animated");
   const options = {
@@ -75,8 +75,8 @@
   /*==== Submit Button ==== */
   const form = document.getElementById('form');
   const submitMessage = document.getElementById('submitMessage');
-form.addEventListener('submit', (event) => {
-  event.preventDefault(); // Prevent form submission
-  submitMessage.style.display = 'block';
-});
+  form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent form submission
+    submitMessage.style.display = 'block';
+  });
 })();

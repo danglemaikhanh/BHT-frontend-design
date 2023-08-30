@@ -163,14 +163,20 @@
   width: 100%;
 }
 
-.slider__image> video {
+/* .slider__image> video {
+  display: block;
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+} */
+.slider__image> img {
   display: block;
   width: 100%;
   height: 90vh;
   object-fit: cover;
 }
 
-/* .image {
+.image {
   position: absolute;
   inset: 0;
   opacity: 0;
@@ -182,7 +188,7 @@
 .image[data-active] {
   opacity: 1;
   transform: scale(1);
-} */
+}
 
 @media screen and (max-width: 844px) {
   .slider__title {
