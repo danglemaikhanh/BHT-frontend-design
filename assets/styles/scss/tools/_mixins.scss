@@ -1,0 +1,25 @@
+@mixin box($flow, $wrap:wrap,$main:center,$cross:center){
+    display: flex;
+    flex-flow: $flow wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin form-area {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 1rem;
+    border-radius: .5rem;
+    outline: none;
+}
+
+@mixin grid {
+    display: grid;
+    place-items: center;
+}

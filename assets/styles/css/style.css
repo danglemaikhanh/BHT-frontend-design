@@ -1,0 +1,110 @@
+
+/*Farben und Schriftart*/
+:root{
+    --main-color: rgb(245, 245, 245);
+    --secondary-color: rgb(202, 194, 234);
+    --accent-color:rgb(97, 60, 168);
+    --font-family-sans-serif: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: var(--main-color);
+    font-family: var(--font-family-sans-serif);
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    color:  rgb(28, 30, 31);
+}
+
+article{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* Überschiften */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+article p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+nav ul{
+    list-style: none;
+}
+
+nav a {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(43, 47, 50);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(43, 47, 50);
+}
+
+ul>li {
+    list-style: none;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    top: 0;
+    left: 0;
+    margin-top: 65px;
+    text-align: left;
+}
+
+input,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  padding: 0;
+}

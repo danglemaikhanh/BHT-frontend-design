@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "require": "^2.4.20",
+    "sass": "^1.62.1"
+  }
+}
