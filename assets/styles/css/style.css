@@ -1,17 +1,16 @@
-
 /*Farben und Schriftart*/
 :root {
     --main-color: rgb(245, 245, 245);
     --secondary-color: rgb(202, 194, 234);
-    --accent-color:rgb(97, 60, 168);
+    --accent-color: rgb(97, 60, 168);
     --font-family-sans-serif: "Open Sans", sans-serif;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-} 
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
@@ -26,7 +25,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     text-align: center;
-    color:  rgb(28, 30, 31);
+    color: rgb(28, 30, 31);
 }
 
 article {
@@ -53,7 +52,22 @@ article p {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-  }
+}
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
 nav ul {
     list-style: none;
 }
@@ -66,6 +80,7 @@ nav a {
     font-weight: bold;
     text-decoration: none;
 }
+
 a {
     text-decoration: none;
     color: rgb(43, 47, 50);
@@ -103,12 +118,8 @@ footer {
 
 input,
 textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-input[type="radio"],
-input[type="checkbox"] {
-  padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }

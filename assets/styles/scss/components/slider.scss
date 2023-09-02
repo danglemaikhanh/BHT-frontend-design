@@ -209,19 +209,3 @@
     margin-left: -6px;
   }
 }
-
-@media screen and (max-width: 382px) {
-  section {
-    padding: 0;
-    margin: auto;
-    margin-left: 5px;
-  }
-  .slider__title {
-    span{
-      font-size: 3.5rem;
-    }
-    p {
-      font-size: font.$font-size-h5;
-    }
-  } 
-}

@@ -227,17 +227,4 @@
             backdrop-filter: none;
     margin-left: -6px;
   }
-}
-@media screen and (max-width: 382px) {
-  section {
-    padding: 0;
-    margin: auto;
-    margin-left: 5px;
-  }
-  .slider__title span {
-    font-size: 3.5rem;
-  }
-  .slider__title p {
-    font-size: 1.2rem;
-  }
 }/*# sourceMappingURL=slider.css.map */
