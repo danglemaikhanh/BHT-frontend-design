@@ -30,7 +30,7 @@
 #about .about__box {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   gap: 1rem;
   margin-bottom: 10px;
 }
@@ -170,6 +170,11 @@
 #commission .commission-type__box div:hover h4 {
   color: rgb(255, 255, 255);
 }
+#commission .commission-type__box div:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-radius: 30px;
+}
 #commission .commission-type__box img {
   display: block;
   border-radius: 10%;
@@ -180,6 +185,7 @@
   aspect-ratio: 1/1.5;
   -o-object-fit: cover;
      object-fit: cover;
+  padding: 1rem;
 }
 #commission .commission-type__box ul li {
   width: 100%;

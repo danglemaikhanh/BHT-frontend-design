@@ -36,8 +36,6 @@
 }
 
 .nav__link:hover {
-    position: relative;
-
     &::after {
         position: absolute;
         content: '';
