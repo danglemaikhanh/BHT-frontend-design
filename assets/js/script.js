@@ -14,11 +14,21 @@
 
   /*==== Active and remove Link ====*/
   const navLink = document.querySelectorAll('.nav__link');
-  function linkAction() {
-    navLink.forEach(n => n.classList.remove('active'));
-    this.classList.add('active');
-  }
-  navLink.forEach(n => n.addEventListener('click', linkAction));
+  const articles = document.querySelectorAll('.scroll-article');
+  let currentArticle = 'home';
+  window.addEventListener('scroll', () => {
+    articles.forEach(article => {
+      if (window.scrollY >= article.offsetTop - 100) {
+        currentArticle = article.id;
+      }
+    });
+    navLink.forEach(link => {
+      if (link.href.includes(currentArticle)) {
+        document.querySelector('.active').classList.remove('active');
+        link.classList.add('active');
+      }
+    })
+  });
 
   /*==== Slider ==== */
   const images = document.querySelectorAll(".slider__image img");
@@ -74,9 +84,10 @@
   });
   /*==== Submit Button ==== */
   const form = document.getElementById('form');
-  const submitMessage = document.getElementById('submitMessage');
+  const submitMessage = document.getElementById('submit-message');
   form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault();
     submitMessage.style.display = 'block';
+    form.reset();
   });
 })();
