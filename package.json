@@ -1,6 +1,12 @@
 {
-  "devDependencies": {
-    "require": "^2.4.20",
-    "sass": "^1.62.1"
-  }
+  "name": "bht-frontend-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dang Le Mai Khanh",
+  "license": "ISC"
 }
